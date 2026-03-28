@@ -9,7 +9,7 @@ AWS Lambda, data is stored in DynamoDB, and execution
 is monitored via CloudWatch.
 
 ## Architecture
-Architecture diagram coming soon.
+![Architecture Diagram](architecture-diagram.svg)
 
 ### AWS Services Used
 - API Gateway
@@ -24,7 +24,10 @@ Architecture diagram coming soon.
 - An AWS account with appropriate IAM permissions
 
 ## Deployment
-Deployment guide coming soon.
+See the [deployment guide](deployment/deployment-guide.md) for step by step instructions, or run the automated script:
+```bash
+bash deployment/deploy.sh
+```
 
 ## Author
 Tonny Piper | [GitHub](https://github.com/TonnyPiperDev)

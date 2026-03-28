@@ -40,7 +40,7 @@ def create_user(event):
         'UserName': body['UserName'],
         'UserSurname': body['UserSurname'],
         'UserBirthdate': body['UserBirthdate'],
-        'UserSex': body['UserSex'],
+        'UserGender': body['UserGender'],
         'UserPost': body['UserPost'],
         'UserInVacation': body['UserInVacation']
     }
@@ -73,7 +73,7 @@ def get_user(event):
                 'UserName': item['UserName'],
                 'UserSurname': item['UserSurname'],
                 'UserBirthdate': item['UserBirthdate'],
-                'UserSex': item['UserSex'],
+                'UserGender': item['UserGender'],
                 'UserPost': item['UserPost'],
                 'UserInVacation': item['UserInVacation']
             })
@@ -127,12 +127,12 @@ def update_user(event):
         # Step 4: update the item in DynamoDB
         table.update_item(
             Key={'userId': user_id},
-            UpdateExpression='SET UserName=:n, UserSurname=:s, UserBirthdate=:b, UserSex=:sx, UserPost=:p, UserInVacation=:v',
+            UpdateExpression='SET UserName=:n, UserSurname=:s, UserBirthdate=:b, UserGender=:sx, UserPost=:p, UserInVacation=:v',
             ExpressionAttributeValues={
                 ':n': body['UserName'],
                 ':s': body['UserSurname'],
                 ':b': body['UserBirthdate'],
-                ':sx': body['UserSex'],
+                ':sx': body['UserGender'],
                 ':p': body['UserPost'],
                 ':v': body['UserInVacation']
             }
