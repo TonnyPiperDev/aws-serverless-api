@@ -1,4 +1,4 @@
-# Created by https://www.toptal.com/developers/gitignore/api/python,terraform,visualstudiocode
+X# Created by https://www.toptal.com/developers/gitignore/api/python,terraform,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,terraform,visualstudiocode
 
 ### Python ###
@@ -230,3 +230,9 @@ terraform.rc
 
 # End of https://www.toptal.com/developers/gitignore/api/python,terraform,visualstudiocode
 .aws-sam/
+*.zip
+response.json
+*.credentials
+*.env
+.env
+*.pem

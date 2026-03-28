@@ -11,7 +11,7 @@
         "dynamodb:Scan",
          "dynamodb:Query"
       ],
-      "Resource": "arn:aws:dynamodb:eu-central-1:510701314701:table/Users"
+      "Resource": "arn:aws:dynamodb:eu-central-1:YOUR_ACCOUNT_ID:table/Users"
     }
   ]
 }
